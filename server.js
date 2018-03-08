@@ -2,6 +2,10 @@ var express = require('express.io');
 var app = express();
 app.http().io();
 var PORT =8080;
+
+var PORT = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
+    ip   = process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
+
 console.log('server start');
 
 app.get('/', function(req,res){
@@ -32,4 +36,4 @@ app.io.route('signal',function(req){
 	
 })
 
-app.listen(PORT);
+app.listen(PORT,ip);
