@@ -1,7 +1,7 @@
 var express = require('express.io');
 var app = express();
 app.http().io();
-var PORT =3000;
+var PORT =8080;
 console.log('server start');
 
 app.get('/', function(req,res){
