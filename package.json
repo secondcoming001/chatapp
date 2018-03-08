@@ -1,0 +1,11 @@
+{
+	"name": "second-coming",
+	"version": "0.0.1",
+	"dependencies": {
+		"coffeescript": "^1.4.0",
+		"connect": "^3.4.1",
+		"ejs": "2.x",
+		"express": "4.x",
+		"express.io": "^1.1.13"
+	}
+}
